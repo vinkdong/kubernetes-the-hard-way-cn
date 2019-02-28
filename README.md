@@ -1,0 +1,1 @@
+此项目源于[kelseyhightower/kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way)启发，主要做了一些翻译和使用阿里云替代谷歌云
