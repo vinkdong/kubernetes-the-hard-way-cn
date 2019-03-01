@@ -27,3 +27,5 @@ scp encryption-config.yaml root@vk001:/root
 scp encryption-config.yaml root@vk002:/root
 scp encryption-config.yaml root@vk003:/root
 ```
+
+下一章 [安装etcd]()
