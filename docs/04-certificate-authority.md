@@ -277,7 +277,7 @@ cat > kubernetes-csr.json <<EOF
 EOF
 
 KUBERNETES_PUBLIC_ADDRESS="39.98.167.186" # master节点或者lb的公网ip
-MASTER_NODE_IPS="172.26.192.62,172.26.192.65,172.26.192.66" #master节点的内网ip
+MASTER_NODE_IPS="172.26.192.62,172.26.192.65,172.26.192.66,172.26.192.67" #master节点的内网ip和slb ip
 cfssl gencert \
   -ca=ca.pem \
   -ca-key=ca-key.pem \
