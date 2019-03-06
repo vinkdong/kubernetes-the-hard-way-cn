@@ -197,3 +197,5 @@ NAME    STATUS   ROLES    AGE     VERSION
 vk004   Ready    <none>   64s     v1.13.0
 vk005   Ready    <none>   7m38s   v1.13.0
 ```
+
+下节[部署网络](10-pod-network-routes.md)
