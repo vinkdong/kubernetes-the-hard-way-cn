@@ -84,5 +84,5 @@ ETCDCTL_API=3 etcdctl member list \
 9f4096f003caee88, started, vk002, https://172.26.192.65:2380, https://172.26.192.65:2379
 ```
 
-下一节[配置Kubernetes控制节点](08-bootstrapping-kubernetes-controllers)
+下一节[配置Kubernetes控制节点](08-bootstrapping-kubernetes-controllers.md)
 

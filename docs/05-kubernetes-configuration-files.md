@@ -141,4 +141,4 @@ scp kube-proxy.kubeconfig root@vk005:/root
 ```
 
 
-下一章[创建加密配置](06-data-encryption-keys)
+下一章[创建加密配置](06-data-encryption-keys.md)

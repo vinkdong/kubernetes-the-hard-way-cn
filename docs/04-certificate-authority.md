@@ -343,4 +343,4 @@ service-account.pem
 将ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem service-account-key.pem service-account.pem 给每个master节点。
 kube-proxy, kube-controller-manager, kube-scheduler, and kubelet暂时不用理会
 
-下一节[生成k8s配置文件](05-kubernetes-configuration-files)
+下一节[生成k8s配置文件](05-kubernetes-configuration-files.md)
