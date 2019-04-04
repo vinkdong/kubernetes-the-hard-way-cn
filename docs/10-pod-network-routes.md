@@ -22,7 +22,7 @@ kube-flannel-ds-amd64-x2gr6   1/1     Running   0          1s
 
 ```bash
 echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf
-sysctl -w net.ipv4.ip_forward=0
+sysctl -w net.ipv4.ip_forward=1
 sysctl net.ipv4.ip_forward
 ```
 
