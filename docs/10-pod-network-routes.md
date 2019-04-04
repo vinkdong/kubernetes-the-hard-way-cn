@@ -18,12 +18,18 @@ kube-flannel-ds-amd64-j9wwd   1/1     Running   0          1s
 kube-flannel-ds-amd64-x2gr6   1/1     Running   0          1s
 ```
 
-## 启动ipv4 forward
+## 在work节点启动ipv4 forward
 
 ```bash
 echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf
 sysctl -w net.ipv4.ip_forward=1
 sysctl net.ipv4.ip_forward
+```
+
+## 允许kubedns
+
+```bash
+echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables
 ```
 
 下一节[部署DNS](11-dns-addon.md)
