@@ -36,6 +36,8 @@ mv ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem \
 
 - 配置api-server服务
 
+     如果安装1.14版本需要移除下文中的initializers
+
 ```bash
 INTERNAL_IP=$(ip addr show eth0 | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
 ETCD_SERVERS="https://172.26.192.62:2379,https://172.26.192.65:2379,https://172.26.192.66:2379"
