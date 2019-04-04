@@ -54,6 +54,8 @@ kubectl config set-context default \
     --cluster=kubernetes-hand-cn \
     --user=system:kube-proxy \
     --kubeconfig=kube-proxy.kubeconfig
+
+kubectl config use-context default --kubeconfig=kube-controller-manager.kubeconfig
 ```
 
 创建controller配置文件
