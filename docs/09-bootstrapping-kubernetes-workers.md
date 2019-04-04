@@ -9,19 +9,8 @@ apt-get update
 apt-get -y install socat conntrack ipset
 ```
 
+
 ## 下载资源
-
-```bash
-wget https://dl.k8s.io/v1.13.0/kubernetes-server-linux-amd64.tar.gz
-wget https://github.com/containernetworking/plugins/releases/download/v0.7.4/cni-plugins-amd64-v0.7.4.tgz
-
-tar -xvzf kubernetes-server-linux-amd64.tar.gz
-cd kubernetes/server/bin/
-mv kubectl kube-proxy kubelet /usr/local/bin/
-cd ../../../
-
-tar -xvf cni-plugins-amd64-v0.7.4.tgz -C /opt/cni/bin/
-```
 
 - 创建存放配置文件的文件夹
 
@@ -33,6 +22,19 @@ mkdir -p \
   /var/lib/kube-proxy \
   /var/lib/kubernetes \
   /var/run/kubernetes
+```
+
+
+```bash
+wget https://dl.k8s.io/v1.13.0/kubernetes-server-linux-amd64.tar.gz
+wget https://github.com/containernetworking/plugins/releases/download/v0.7.5/cni-plugins-amd64-v0.7.5.tgz
+
+tar -xvzf kubernetes-server-linux-amd64.tar.gz
+cd kubernetes/server/bin/
+mv kubectl kube-proxy kubelet /usr/local/bin/
+cd ../../../
+
+tar -xvf cni-plugins-amd64-v0.7.5.tgz -C /opt/cni/bin/
 ```
 
 ## 安装docker 
