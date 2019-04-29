@@ -10,7 +10,7 @@ kubernetes的集群相关数据主要存储在etcd中。下边配置一个高可
 
 ```bash
 # 下载会有点慢 注意保持连接
-wget -q --show-progress --https-only --timestamping https://github.com/etcd-io/etcd/releases/download/v3.3.12/etcd-v3.3.12-linux-amd64.tar.gz
+wget -q --timestamping https://github.com/etcd-io/etcd/releases/download/v3.3.12/etcd-v3.3.12-linux-amd64.tar.gz
 
 tar -xvf etcd-v3.3.12-linux-amd64.tar.gz
 mv etcd-v3.3.12-linux-amd64/etcd* /usr/local/bin/
